@@ -1,0 +1,15 @@
+export enum NotificationTypeEnum {
+  sessionRequest = 'sessionRequest',
+  sessionFinish = 'sessionFinish',
+  account = 'account',
+  reviewStory = 'reviewStory',
+  publishStory = 'publishStory',
+  rejectStory = 'rejectStory',
+  huberReported = 'huberReported',
+  rejectHuber = 'rejectHuber',
+  approveReadingSession = 'approveReadingSession',
+  rejectReadingSession = 'rejectReadingSession',
+  cancelReadingSession = 'cancelReadingSession',
+  missReadingSession = 'missReadingSession',
+  other = 'other',
+}
