@@ -71,6 +71,6 @@ async function bootstrap() {
     },
   });
 
-  await app.listen(3000);
+  await app.listen(configService.getOrThrow('app.port', { infer: true }));
 }
 void bootstrap();
