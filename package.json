@@ -40,7 +40,7 @@
     "dev:husky": "node .husky/install.mjs",
     "release": "release-it",
     "postinstall": "prisma generate",
-    "postbuild": "cp -r node_modules/@prisma/client dist/node_modules/@prisma/client || true"
+    "postbuild": "mkdir -p dist/node_modules/.prisma/client && cp -r node_modules/.prisma/client/query-engine-*.node dist/node_modules/.prisma/client/ || true"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "3.637.0",
